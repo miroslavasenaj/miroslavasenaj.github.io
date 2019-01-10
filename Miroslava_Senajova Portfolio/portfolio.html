@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Miroslava Senajova Portfolio </title>
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body,
+.container {
+background: black;
+
+
+}
+
+.icon-bar i {
+    color:white;
+}
+    </style>
+
+</head>
+
+<body>
+<div id="app">
+    <div class="container">
+        <!--Smaller screens only-->
+
+        <div class="topbar smallonly">
+            <a class="logo">MS</a>
+
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a href="about.html"><i class="fas fa-user-circle"></i></a>
+            <a class="active" href="portfolio.html"><i class="fab fa-creative-commons-nd"></i></a>
+            <a href="contact.html"><i class="fas fa-at"></i></a>
+        </div>
+        <!--Smaller screens only-->
+
+        <div class="sidebar">
+            <nav>
+
+                <div class="logo">MS</div>
+
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="about.html"><i class="fas fa-user-circle"></i>About me</a>
+                <a class="active" href="portfolio.html"><i class="fab fa-creative-commons-nd"></i>Portfolio</a>
+                <a href="contact.html"><i class="fas fa-at"></i>Contact me</a>
+
+            </nav>
+        </div>
+
+
+
+
+        <div class="projects">
+            <div class="project">
+                <img src="images/apel.png">
+                <div class="text">
+                    <h3>Guldsmed Apel</h3>
+                    <p class="projectCaption">{{ apelCaption }}<br>
+                        <button onclick=window.location.href="http://des-iis.ucn.dk/mmdi0917/1067581/Apel%20website/" class="button1">See
+                        project</button></p>
+                    </div>
+                
+            </div>
+            <div class="project">
+                <img style="width:200px" src="images/zero_waste.png">
+                <div class="text">
+                    <h3>Zero Waste App</h3>
+                <p class="projectCaption">{{ zeroCaption }}<br>
+                    <button 
+                    class="button1">See
+                    project</button></p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/website.png">
+                <div class="text">
+                    <h3>Infomative website</h3>
+                <p class="projectCaption">{{ infoweb }}<br>
+                    <button
+                    class="button1">See
+                    project</button></p>
+                </div>
+            </div>
+        
+
+        </div>
+        <div class="icon-bar">
+            <a href="https://www.facebook.com/miroslava.senajova" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="mailto:miroslava.senajova@gmail.com" target="_blank" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/miroslava-senajova-468a8b136/" target="_blank" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <footer>
+            copyright &copy; miroslava senajova 2018
+        </footer>
+
+
+
+
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script/script.js"></script>
+</div>
+</body>
+
+</html>
